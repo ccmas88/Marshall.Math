@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1: Exponents</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body class="lesson-page">
+    <header>
+        <h1>Lesson 1: Exponents</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="lesson-content">
+        <h2>Worked Example</h2>
+        <p><strong>Problem:</strong> Simplify \(2^3 \times 2^4\)</p>
+
+        <div class="step">
+            <p><strong>Step 1:</strong> Use the property \(a^m \times a^n = a^{m+n}\)</p>
+        </div>
+        <div class="step">
+            <p><strong>Step 2:</strong> Add the exponents: \(3 + 4 = 7\)</p>
+        </div>
+        <div class="step">
+            <p><strong>Step 3:</strong> Write the result: \(2^7 = 128\)</p>
+        </div>
+
+        <h2>Try a Similar Problem</h2>
+        <p>Simplify \(3^2 \times 3^5\)</p>
+
+        <input type="text" id="studentAnswer" placeholder="Enter your answer">
+        <button onclick="checkAnswer()">Check Answer</button>
+        <p id="feedback"></p>
+    </main>
+
+    <footer>
+        <p>Mini-Khan Academy &copy; 2026</p>
+    </footer>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById('studentAnswer').value;
+            const feedback = document.getElementById('feedback');
+
+            if(answer === '243') {
+                feedback.innerHTML = "✅ Correct! \(3^2 \\times 3^5 = 3^7 = 243\)";
+                feedback.style.color = 'green';
+            } else {
+                feedback.textContent = "❌ Not quite. Try again!";
+                feedback.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 3: Exponential Growth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lesson-page">
+    <header>
+        <h1>Lesson 3: Exponential Growth</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lesson2.html">Previous</a>
+        </nav>
+    </header>
+
+    <main class="lesson-content">
+        <h2>Topic: Exponential Growth</h2>
+        <p>Exponential growth happens when a quantity increases by a constant factor over equal time intervals.</p>
+        <p>Example: If a population doubles every year, then starting with 100:</p>
+        <p><strong>Year 1: 200, Year 2: 400, Year 3: 800</strong></p>
+    </main>
+
+    <footer>
+        <p>Mini-Khan Academy &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
